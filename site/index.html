@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="公司健檢照妖鏡：輸入台股代號，用 FinBERT 分析新聞與論壇情緒，搭配股價與技術指標給出投資分析。" />
-<title>公司健檢照妖鏡｜Company X-Ray</title>
+<meta name="description" content="台股情緒站：輸入台股代號，用 FinBERT 分析新聞與論壇情緒，搭配股價與技術指標給出投資分析。" />
+<title>台股情緒站｜Taiwan Stock Sentiment</title>
 <link rel="stylesheet" href="style.css" />
 <script src="chart.umd.min.js"></script>
 </head>
 <body>
 <div class="app">
   <header class="topbar">
-    <div class="brand"><div class="brand-mark">X</div><div><h1>公司健檢照妖鏡</h1><p>Company X-Ray · 台股新聞情緒 × 股價分析</p></div></div>
+    <div class="brand"><div class="brand-mark">X</div><div><h1>台股情緒站</h1><p>Taiwan Stock Sentiment · 台股新聞情緒 × 股價分析</p></div></div>
     <div class="top-actions"><span class="pill" id="modePill">連線中…</span><span class="pill" id="modelPill">情緒模型：—</span></div>
   </header>
 
@@ -43,7 +43,7 @@
   <div id="banner"></div>
   <main id="view"><div class="empty">輸入一檔股票開始健檢。</div></main>
 
-  <p class="footer">公司健檢照妖鏡為 MIS 課程 MVP，延伸自 Huang, Wang &amp; Yang (2023) FinBERT 論文。情緒標籤可能誤判，分析與評分為規則式計算，<b>不構成投資建議</b>；請以原始公告、完整報告與專業意見為準。</p>
+  <p class="footer">台股情緒站為 MIS 課程 MVP，延伸自 Huang, Wang &amp; Yang (2023) FinBERT 論文。情緒標籤可能誤判，分析與評分為規則式計算，<b>不構成投資建議</b>；請以原始公告、完整報告與專業意見為準。</p>
 </div>
 <div class="toast" id="toast"></div>
 <script src="live.js"></script>
