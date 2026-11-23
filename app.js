@@ -1,4 +1,4 @@
-/* 公司健檢照妖鏡｜Company X-Ray 前端
+/* 台股情緒站｜Taiwan Stock Sentiment 前端
  * 資料流程：GitHub Actions 每日產生 data/index.json 與 data/s/{代號}.json → 網頁讀取
  * 所有統計、圖表、技術指標與投資評分都在瀏覽器計算，因此即時與備援模式畫面完全一致。
  */
@@ -599,7 +599,7 @@ function drawTable() {
 function exportReport(a, adv) {
   const d = a.d, t = a.tech || {};
   const lines = [
-    '公司健檢照妖鏡｜分析摘要', `公司：${d.name}（${d.code}）`, `期間：近 ${a.days} 天（${a.dates[0]} ～ ${a.dates[a.dates.length - 1]}）`,
+    '台股情緒站｜分析摘要', `公司：${d.name}（${d.code}）`, `期間：近 ${a.days} 天（${a.dates[0]} ～ ${a.dates[a.dates.length - 1]}）`,
     `資料模式：${d.mode}　情緒模型：${d.model}`, '',
     `股價：${fmt(d.quote?.price, 2)}（${pct(d.quote?.changePct, 2)}）　本益比 ${fmt(d.valuation?.pe, 1)}　殖利率 ${fmt(d.valuation?.yield, 2)}%`,
     `總聲量：${a.total} 篇　正面 ${a.c.pos}／中性 ${a.c.neu}／負面 ${a.c.neg}　好感度 ${a.favor == null ? '—' : a.favor.toFixed(2)}　淨情緒 ${a.net.toFixed(0)}`,

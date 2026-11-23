@@ -1,4 +1,4 @@
-# 公司健檢照妖鏡｜Company X-Ray（GitHub 每日自動更新版）
+# 台股情緒站｜Taiwan Stock Sentiment（GitHub 每日自動更新版）
 
 任何電腦打開網址就能用，不用安裝任何東西。**可查詢全部上市櫃股票**：
 
